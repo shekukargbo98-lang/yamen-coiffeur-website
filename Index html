@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="meta.title">Yamen — L’artiste Coiffeur | Coupe, Coloration & Styling</title>
+  <meta name="description" data-i18n="meta.description" content="Styliste à Tunis — coupes contemporaines, coloration et coiffure sur-mesure. Réservez en ligne ou contactez-nous sur WhatsApp." />
+  <meta property="og:title" content="Yamen — L’artiste Coiffeur" />
+  <meta property="og:description" content="Coupe, coloration et coiffure professionnelle à Les Palmeraies, Tunis. Réservez aujourd'hui." />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- LocalBusiness JSON-LD (update phone, openingHours if needed) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Yamen — L'artiste Coiffeur",
+    "image": "https://example.com/assets/images/og-image.jpg",
+    "telephone": "+216-000-000-000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Les Palmeraies",
+      "addressLocality": "Tunis",
+      "addressCountry": "TN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.81897,
+      "longitude": 10.16579
+    },
+    "url": "https://example.com",
+    "openingHours": "Mo,Tu,We,Th,Fr 09:00-19:00",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Yamen - L'artiste Coiffeur">
+        <img src="assets/logo.png" alt="Yamen logo" class="logo" />
+      </a>
+
+      <nav class="top-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">Galerie</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-switch">
+          <select id="langSelect" aria-label="Language switcher">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+            <option value="ar">AR</option>
+          </select>
+        </div>
+        <a class="btn-primary" id="bookBtn" href="#booking" data-i18n="btn.book">Réserver</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media">
+        <img src="assets/images/hero.jpg" alt="Coupe et coloration par Yamen" class="hero-img" />
+      </div>
+      <div class="hero-content container">
+        <h1 data-i18n="hero.title">Yamen — L’artiste Coiffeur</h1>
+        <p class="lead" data-i18n="hero.subtitle">Coupe moderne, colorations sur-mesure et coiffures pour toutes occasions.</p>
+        <div class="hero-ctas">
+          <a class="btn-primary" id="bookNow" href="#booking" data-i18n="btn.book">Réserver</a>
+          <a class="btn-ghost" href="#gallery" data-i18n="btn.gallery">Voir la galerie</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <header class="section-header">
+        <h2 data-i18n="services.title">Services populaires</h2>
+        <p data-i18n="services.subtitle">Coupe, coloration, balayage et coiffure — tarifs approximatifs.</p>
+      </header>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3 data-i18n="services.cut.title">Coupe homme/femme</h3>
+          <p data-i18n="services.cut.desc">Consultation + coupe personnalisée.</p>
+          <div class="price" data-i18n="services.cut.price">À partir de 25 TND</div>
+        </article>
+
+        <article class="service-card">
+          <h3 data-i18n="services.color.title">Coloration complète</h3>
+          <p data-i18n="services.color.desc">Coloration professionnelle, soins et finition.</p>
+          <div class="price" data-i18n="services.color.price">À partir de 80 TND</div>
+        </article>
+
+        <article class="service-card">
+          <h3 data-i18n="services.balayage.title">Balayage</h3>
+          <p data-i18n="services.balayage.desc">Effets naturels et sur-mesure.</p>
+          <div class="price" data-i18n="services.balayage.price">À partir de 120 TND</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery container">
+      <header class="section-header">
+        <h2 data-i18n="gallery.title">Galerie</h2>
+        <p data-i18n="gallery.subtitle">Sélection de réalisations — appuyez pour agrandir.</p>
+      </header>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Replace these with your real images: assets/images/1.jpg ... -->
+        <a class="gallery-item" href="assets/images/1.jpg" target="_blank">
+          <img src="assets/images/1.jpg" alt="Avant / Après 1" />
+        </a>
+        <a class="gallery-item" href="assets/images/2.jpg" target="_blank">
+          <img src="assets/images/2.jpg" alt="Avant / Après 2" />
+        </a>
+        <a class="gallery-item" href="assets/images/3.jpg" target="_blank">
+          <img src="assets/images/3.jpg" alt="Avant / Après 3" />
+        </a>
+        <a class="gallery-item" href="assets/images/4.jpg" target="_blank">
+          <img src="assets/images/4.jpg" alt="Avant / Après 4" />
+        </a>
+      </div>
+
+      <div class="gallery-cta">
+        <a class="btn-ghost" href="https://www.instagram.com/yamen_l_artiste_coiffeur" target="_blank" rel="noopener" data-i18n="gallery.viewOnInstagram">Voir plus sur Instagram</a>
+      </div>
+    </section>
+
+    <section id="booking" class="booking container">
+      <header class="section-header">
+        <h2 data-i18n="booking.title">Réservation</h2>
+        <p data-i18n="booking.subtitle">Réservez en ligne ou contactez-nous sur WhatsApp.</p>
+      </header>
+
+      <div class="booking-grid">
+        <div class="booking-embed">
+          <!-- Insert booking widget iframe or script from Booksy / Fresha / Calendly here -->
+          <div class="booking-placeholder" aria-hidden="true">[Espace pour widget de réservation — collez le code d'intégration ici]</div>
+        </div>
+
+        <aside class="contact-panel">
+          <h3 data-i18n="contact.title">Contact</h3>
+          <p><strong data-i18n="contact.address">Les Palmeraies, Tunis</strong></p>
+          <p><a id="phoneLink" href="tel:+216000000000">+216 000 000 000</a></p>
+          <p><a id="whatsappLink" href="https://wa.me/216000000000" target="_blank" rel="noopener">WhatsApp</a></p>
+          <div class="map" id="mapEmbed">
+            <!-- Replace the src with your Google Maps embed link -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Yamen — L'artiste Coiffeur</p>
+      <p><a href="#" data-i18n="footer.privacy">Politique de confidentialité</a></p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
