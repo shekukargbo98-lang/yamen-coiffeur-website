@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Yamen — The Artist Hairdresser | Cut, Color & Styling",
+    "description": "Stylist in Tunis — modern cuts, custom color and professional styling. Book online or message on WhatsApp."
+  },
+  "nav": {
+    "services": "Services",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Yamen — The Artist Hairdresser",
+    "subtitle": "Modern cuts, bespoke color and styling for every occasion."
+  },
+  "btn": {
+    "book": "Book",
+    "gallery": "View gallery"
+  },
+  "services": {
+    "title": "Popular services",
+    "subtitle": "Cuts, coloring, balayage and styling — sample prices.",
+    "cut": {
+      "title": "Cut (men/women)",
+      "desc": "Consultation + personalized cut.",
+      "price": "From 25 TND"
+    },
+    "color": {
+      "title": "Full color",
+      "desc": "Professional color, treatments and finish.",
+      "price": "From 80 TND"
+    },
+    "balayage": {
+      "title": "Balayage",
+      "desc": "Natural, bespoke highlights.",
+      "price": "From 120 TND"
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Selected works — click to enlarge.",
+    "viewOnInstagram": "See more on Instagram"
+  },
+  "booking": {
+    "title": "Booking",
+    "subtitle": "Book online or contact us on WhatsApp."
+  },
+  "contact": {
+    "title": "Contact",
+    "address": "Les Palmeraies, Tunis"
+  },
+  "footer": {
+    "privacy": "Privacy policy"
+  }
+}
