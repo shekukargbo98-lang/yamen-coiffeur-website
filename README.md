@@ -55,3 +55,17 @@ Please provide:
 
 When you give me the assets I'll replace the placeholders and deploy a preview link.
 ```
+## Assets & Maps Setup
+
+Place your assets (logo, favicon, hero and gallery images) in this folder:
+
+- assets/logo.png  (or .svg)
+- assets/favicon.png
+- assets/images/hero.jpg
+- assets/images/og-image.jpg
+- assets/images/1.jpg
+- assets/images/2.jpg
+- assets/images/3.jpg
+- assets/images/4.jpg
+
+Replace the Google Maps iframe src in index.html with your real embed link.
