@@ -1,0 +1,64 @@
+// Lightweight i18n loader. Expects translations/*.json to exist.
+// Default language: fr. Supports fr, en, ar (RTL).
+(async function(){
+  const defaultLang = 'fr';
+  const select = document.getElementById('langSelect');
+  const supported = ['fr','en','ar'];
+
+  function setLanguage(lang){
+    if(!supported.includes(lang)) lang = defaultLang;
+    // update select
+    if(select) select.value = lang;
+    // load translations
+    fetch(`translations/${lang}.json`).then(r => r.json()).then(trans => {
+      // apply to elements with data-i18n
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if(!key) return;
+        const text = key.split('.').reduce((o,i)=>o && o[i], trans);
+        if(text !== undefined){
+          el.textContent = text;
+          // update attributes for special keys
+          if(el.tagName.toLowerCase()==='title' || el.tagName.toLowerCase()==='meta') document.title = trans.meta?.title || document.title;
+        }
+      });
+
+      // set direction
+      if(lang === 'ar'){
+        document.documentElement.setAttribute('dir','rtl');
+        document.documentElement.setAttribute('lang','ar');
+        document.body.style.fontFamily = '"Cairo", "Poppins", sans-serif';
+      } else {
+        document.documentElement.setAttribute('dir','ltr');
+        document.documentElement.setAttribute('lang',lang);
+        document.body.style.fontFamily = '"Poppins", system-ui, sans-serif';
+      }
+
+      // Update placeholders / links that require translation
+      if(trans.meta && trans.meta.description){
+        const meta = document.querySelector('meta[name="description"]');
+        if(meta) meta.setAttribute('content', trans.meta.description);
+      }
+      if(trans.nav && trans.nav.siteName){
+        // example for future
+      }
+    }).catch(err=>{
+      console.error('i18n load error',err);
+    });
+  }
+
+  // language change
+  if(select){
+    select.addEventListener('change', e=>{
+      setLanguage(e.target.value);
+      // persist selection
+      localStorage.setItem('site_lang', e.target.value);
+    });
+  }
+
+  // initial language selection: check persisted -> browser -> default
+  const stored = localStorage.getItem('site_lang');
+  let init = stored || navigator.language?.slice(0,2) || defaultLang;
+  if(!supported.includes(init)) init = defaultLang;
+  setLanguage(init);
+})();
