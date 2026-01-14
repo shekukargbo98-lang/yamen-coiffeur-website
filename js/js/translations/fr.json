@@ -22,17 +22,17 @@
     "cut": {
       "title": "Coupe homme/femme",
       "desc": "Consultation + coupe personnalisée.",
-      "price": "À partir de 25 TND"
+      "price": "À partir de"
     },
     "color": {
       "title": "Coloration complète",
       "desc": "Coloration professionnelle, soins et finition.",
-      "price": "À partir de 80 TND"
+      "price": "À partir de"
     },
     "balayage": {
       "title": "Balayage",
       "desc": "Effets naturels et sur-mesure.",
-      "price": "À partir de 120 TND"
+      "price": "À partir de"
     }
   },
   "gallery": {
