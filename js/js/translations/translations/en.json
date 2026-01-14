@@ -22,17 +22,17 @@
     "cut": {
       "title": "Cut (men/women)",
       "desc": "Consultation + personalized cut.",
-      "price": "From 25 TND"
+      "price": "From"
     },
     "color": {
       "title": "Full color",
       "desc": "Professional color, treatments and finish.",
-      "price": "From 80 TND"
+      "price": "From"
     },
     "balayage": {
       "title": "Balayage",
       "desc": "Natural, bespoke highlights.",
-      "price": "From 120 TND"
+      "price": "From"
     }
   },
   "gallery": {
