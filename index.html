@@ -1,193 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title data-i18n="meta.title">
-    Yamen — L’artiste Coiffeur | Coupe, Coloration & Styling
-  </title>
+  <title>L’artiste Coiffeur Yamen | Luxury Hair, Nails & Spa</title>
+  <meta name="description" content="Salon de beauté de luxe à Tunis. Coiffure, coloration, ongles, hammam & spa. Une expérience VIP pour femmes." />
 
-  <meta name="description"
-        data-i18n="meta.description"
-        content="Styliste à Tunis — coupes contemporaines, coloration et coiffure sur-mesure." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Yamen — L’artiste Coiffeur" />
-  <meta property="og:description" content="Salon de coiffure professionnel à Tunis." />
-  <meta property="og:image" content="hero.jpg" />
-  <meta name="theme-color" content="#ffffff" />
-
-  <link rel="icon" href="assets/favicon.png" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- LocalBusiness Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HairSalon",
-    "name": "Yamen — L'artiste Coiffeur",
-    "image": "hero.jpg",
-    "telephone": "+21655995699",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Cité Les Palmeraies",
-      "addressLocality": "Tunis",
-      "addressCountry": "TN"
-    },
-    "url": "https://example.com",
-    "openingHours": "Mo-Su 10:00-19:30",
-    "priceRange": "TND"
-  }
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="site-header">
-  <div class="container header-inner">
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="logo">YAMEN</div>
 
-    <a class="brand" href="#">
-      <img src="assets/logo.png" alt="Yamen logo" class="logo">
-    </a>
-
-    <nav class="top-nav">
-      <ul>
-        <li><a href="#services" data-i18n="nav.services">Services</a></li>
-        <li><a href="#gallery" data-i18n="nav.gallery">Galerie</a></li>
-        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-      </ul>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="spa.html">Spa & Hammam</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html" class="btn">Réserver</a>
     </nav>
-
-    <div class="header-right">
-      <select id="langSelect">
-        <option value="fr">FR</option>
-        <option value="en">EN</option>
-        <option value="ar">AR</option>
-      </select>
-
-      <a href="#booking" class="btn-primary" data-i18n="btn.book">Réserver</a>
-    </div>
-
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 <section class="hero">
-  <img src="hero.jpg" class="hero-img" alt="Salon Yamen">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>L’art de la beauté & du bien-être</h1>
+    <p>Une expérience beauté luxueuse dédiée aux femmes modernes.</p>
 
-  <div class="hero-content container">
-    <h1 data-i18n="hero.title">Yamen — L’artiste Coiffeur</h1>
-    <p data-i18n="hero.subtitle">
-      Coupe moderne, coloration professionnelle et coiffure sur-mesure.
-    </p>
-
-    <div class="hero-ctas">
-      <a href="#booking" class="btn-primary" data-i18n="btn.book">Réserver</a>
-      <a href="#gallery" class="btn-ghost" data-i18n="btn.gallery">Voir la galerie</a>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn-primary">Réserver</a>
+      <a href="https://wa.me/21655995699" class="btn-outline">WhatsApp</a>
     </div>
   </div>
 </section>
 
-<!-- ================= SERVICES ================= -->
-<section id="services" class="services container">
-  <h2 data-i18n="services.title">Services populaires</h2>
+<!-- SERVICES PREVIEW -->
+<section class="section beige">
+  <div class="container">
+    <h2>Nos expertises</h2>
 
-  <div class="services-grid">
-    <div class="service-card">
-      <h3>Coupe homme / femme</h3>
-      <p>Coupe personnalisée selon votre style</p>
-      <span class="price">À partir de 25 TND</span>
-    </div>
-
-    <div class="service-card">
-      <h3>Coloration</h3>
-      <p>Coloration professionnelle & soins</p>
-      <span class="price">À partir de 80 TND</span>
-    </div>
-
-    <div class="service-card">
-      <h3>Balayage</h3>
-      <p>Effet naturel et moderne</p>
-      <span class="price">À partir de 120 TND</span>
+    <div class="grid-4">
+      <div class="card">Coiffure & Styling</div>
+      <div class="card">Coloration & Balayage</div>
+      <div class="card">Ongles & Beauté</div>
+      <div class="card">Hammam & Spa</div>
     </div>
   </div>
 </section>
 
-<!-- ================= GALLERY ================= -->
-<section id="gallery" class="gallery container">
-  <h2 data-i18n="gallery.title">Galerie</h2>
-
-  <div class="gallery-grid">
-    <img src="1.jpg" alt="">
-    <img src="2.jpg" alt="">
-    <img src="3.jpg" alt="">
-    <img src="4.jpg" alt="">
-    <img src="5.jpg" alt="">
-  </div>
-
-  <a class="btn-ghost"
-     href="https://www.instagram.com/yamen_l_artiste_coiffeur"
-     target="_blank">
-    Voir plus sur Instagram
-  </a>
-</section>
-
-<!-- ================= BOOKING ================= -->
-<section id="booking" class="booking container">
-  <h2 data-i18n="booking.title">Réservation</h2>
-  <p data-i18n="booking.subtitle">
-    Réservez en ligne ou contactez-nous directement
-  </p>
-
-  <div class="booking-placeholder">
-    [ Widget de réservation à ajouter ici ]
+<!-- VIP -->
+<section class="section dark">
+  <div class="container split">
+    <div>
+      <h2>Une expérience VIP</h2>
+      <p>
+        Chez Yamen, chaque cliente est traitée avec soin, élégance et discrétion.
+        Nos espaces sont conçus pour offrir calme, luxe et excellence.
+      </p>
+    </div>
+    <div>
+      <img src="assets/images/salon.jpg" alt="Salon Yamen luxe">
+    </div>
   </div>
 </section>
 
-<!-- ================= CONTACT / LOCATIONS ================= -->
-<section id="contact" class="contact container">
-  <h2 data-i18n="contact.title">Nos salons</h2>
+<!-- LOCATIONS -->
+<section class="section">
+  <div class="container">
+    <h2>Nos centres</h2>
 
-  <!-- Location 1 -->
-  <div class="location-card">
-    <h3>Les Palmeraies (Principal)</h3>
-    <p>Tunis</p>
-    <a href="tel:+21655995699">📞 +216 55 995 699</a><br>
-    <a href="https://wa.me/21655995699" target="_blank">💬 WhatsApp</a>
-
-    <iframe
-      src="https://www.google.com/maps?q=Les+Palmeraies+Tunis&output=embed"
-      loading="lazy">
-    </iframe>
-  </div>
-
-  <!-- Location 2 -->
-  <div class="location-card">
-    <h3>El Aouina / Centre-ville</h3>
-    <p>Tunis</p>
-    <a href="tel:+21656971331">📞 +216 56 971 331</a><br>
-    <a href="https://wa.me/21656971331" target="_blank">💬 WhatsApp</a>
-
-    <iframe
-      src="https://www.google.com/maps?q=El+Aouina+Tunis&output=embed"
-      loading="lazy">
-    </iframe>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Cité Les Palmeraies</h3>
+        <p>Centre principal – Luxe & coiffure</p>
+      </div>
+      <div class="card">
+        <h3>Jardin L’Aouina</h3>
+        <p>Hammam & Spa VIP</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer">
-  <p>© <span id="year"></span> Yamen — L’artiste Coiffeur</p>
+<!-- CTA -->
+<section class="cta">
+  <h2>Réservez votre moment de beauté</h2>
+  <a href="contact.html" class="btn-primary">Prendre rendez-vous</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 L’artiste coiffeur Yamen — Tous droits réservés</p>
 </footer>
 
-<script src="js/i18n.js"></script>
-<script src="js/main.js"></script>
-
+<script src="assets/js/main.js"></script>
 </body>
 </html>
